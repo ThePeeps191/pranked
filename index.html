@@ -6,7 +6,7 @@
     <title>Pranked</title>
 </head>
 <body>
-    <div class="fullscreen"></div>
+    <div class="fullscreen" id="a"></div>
     <style type="text/css">
 body { cursor:none; }
 .fullscreen{
@@ -33,6 +33,7 @@ addEventListener("click", function() {
     ;
     rfs.call(el);
 });
+document.getElementById("a").click();
 // Find the right method, call on correct element
 function launchFullScreen(element) {
   if(element.requestFullScreen) {
